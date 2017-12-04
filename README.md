@@ -15,7 +15,7 @@ Before building the application App Id & Key should be updated in `src/main/reso
 
 ```
 cd <application_directory>
-./mvnw clean package
+./mvnw clean package -DskipTests
 ```
 
 ## Execution
@@ -29,6 +29,20 @@ java -jar target/roadstatus-1.0.jar A2
 ```
 
 > (Note: Additional arguments passed are ignored)
+
+## Running Tests
+
+- Unit Tests
+    ```
+    ./mvnw clean test
+    ```    
+- Integration Tests
+    ```
+    ./mvnw clean install -Pintegration-test
+    ```    
+
+## ToDo
+- Suppressing application log while running integration tests
 
 ## References
 - https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html

@@ -11,6 +11,11 @@ A command line app to fetch status of Road from [TfL API](https://api.tfl.gov.uk
 
 Before building the application App Id & Key should be updated in `src/main/resources/application.properties`
 
+> (Note: API does seem to work without this information! But to avoid any surprises, it is strongly recommended to add this info)
+
+## Assumptions
+- Even though Operating System is not a constraint, application is only tested on Mac OS. 
+
 ## Building application
 
 ```
